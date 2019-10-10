@@ -1,8 +1,8 @@
 var telegram= require("telegram-bot-api");
 var mongojs = require("mongojs");
-var db = mongojs("mongodb://vedha:krishna123@cluster0-shard-00-00-kbuhh.mongodb.net:27017/amritapuri_places?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin",["places"]);
+var db = mongojs(connectionString, [collections])
 var api = new telegram({
-        token: '727428944:AAGJYB8aroKjONm2fyyJCqtIXPnsPtc_NgM',
+        token: '< Your_Telegram_key >',
         updates: {
         	enabled: true
     }
